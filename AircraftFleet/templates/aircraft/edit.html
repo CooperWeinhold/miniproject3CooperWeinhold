@@ -1,0 +1,14 @@
+
+<h1>Edit Aircraft</h1>
+<form method="POST">
+    <label for="type">Aircraft Type</label>
+    <input type="text" name="type" id="type" value="{{ aircraft['type'] }}" required>
+    
+    <label for="registration">Registration</label>
+    <input type="text" name="registration" id="registration" value="{{ aircraft['registration'] }}" required>
+    
+    <label for="flight_hours">Flight Hours</label>
+    <input type="number" step="0.1" name="flight_hours" id="flight_hours" value="{{ aircraft['flight_hours'] }}">
+    
+    <button type="submit">Update Aircraft</button>
+</form>
